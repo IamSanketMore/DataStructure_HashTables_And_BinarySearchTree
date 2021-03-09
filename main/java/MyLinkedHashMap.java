@@ -1,17 +1,14 @@
 import java.util.ArrayList;
 
-public class MyLinkedHashMap<K, V>
-{
+public class MyLinkedHashMap<K, V> {
     private final int numBuckets;
     ArrayList<MyLinkedList<K>> myBucketArray;
 
-    public MyLinkedHashMap()
-    {
+    public MyLinkedHashMap(){
         this.numBuckets = 10;
         this.myBucketArray = new ArrayList<>(numBuckets);
 
-        for (int i=0; i<numBuckets; i++)
-        {
+        for (int i=0; i<numBuckets; i++){
             this.myBucketArray.add(null);
         }
     }
