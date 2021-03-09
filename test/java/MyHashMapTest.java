@@ -26,4 +26,5 @@ public class MyHashMapTest
         Assertions.assertEquals(2,freq);
         Assertions.assertEquals(2,freq1);
     }
+
 }
